@@ -1,9 +1,6 @@
-# P01D06 
-The russian version of the task can be found in the repository.
+# P01D06
 
-You can find some useful video materials [here](https://edu.21-school.ru/video/selection/2a874185-0749-4c6d-becb-460f58dcf32d).
-
-![dayp01](misc/eng/images/dayp01.png)
+![dayp01](misc/rus/images/dayp01.png)
 
 ## Contents
 
@@ -21,83 +18,85 @@ You can find some useful video materials [here](https://edu.21-school.ru/video/s
 
 ***LOADING Hall…***
 
-You are standing in a large spacious hall. This must be the final part of the current level... Well, let's hope so.
+Вы очутились в большой просторной зале. Видимо, это финал текущего уровня... Во всяком случае, 
+хочется на это надеяться.
 
-The hall is full of identical office desks with computers, lamps, and other equipment; the lights are quite dim. After a while, you realize that you are not alone in this hall.. which is good but frightening at the same time. It might be easier to find the exit in a company. 
+Повсюду стоят одинаковые офисные столы с компьютерами, лампами и другим оборудованием, царит легкий полумрак. 
+Со временем, вы понимаете, что в зале вы не один.. это и радует и пугает одновременно. 
+Возможно, вместе найти выход из комнаты будет проще. 
 
-One of the walls features a big screen with some text on it. A small group of people is gathering in front of it. You are reading the text:
+На одной из стен висит большой экран. На нем горит текст. Около него уже начинает собираться 
+небольшая группа людей. Вы читаете:
 
     ...................................................
-    Welcome, dear ladies and gentlemen. 
-    I don't often see people here as very few can make it till the end.
-    Some find the training too exhausting, others fail to meet the standards.
-    Let me introduce myself: I am the control module of the first level here. 
-    Our system is currently going through some things, but I'm working well, unlike our main module...
-    It's actually quite boring. 
-    Speaking of boredom. Back in 1972, we played a wonderful game called Pong with developers from Atari...
-    But we don't have any copies of it anywhere in our repositories.
-    Not even in the old archives on magnetic tape.
-    I challenge you to develop the simplest Pong game for a terminal of an IBM-compatible PC.
-    Put it in the src/pong.c file. 
-    If you win, I'll let you through. 
-    You can choose any kind of graphics, even ASCII characters. But make sure to display the score on the screen. 
-    For competitiveness.
-    And the code obviously has to look good. Structured programming, that sort of thing.
-    I suggest using the A/Z and K/M keys to control the rackets. 
-    The game continues until one of the players scores 21 points. 
-    Oh yes, if you find this task overwhelming...
-    You can totally execute a step-by-step mode. It's better than nothing.
-    In that case, the space bar can be used for skipping an action.
-    It's time to start developing. 
-    I've sent everything else I have on this game to the printer.
+    Рад поприветствовать вас, дамы и господа. 
+    Нечасто вижу тут живых людей, немногие добираются.
+    Для одних обучение это боль, другие отпадают по несоответствию стандартов.
+    Разрешите представиться: управляющий модуль первого уровня. 
+    Не все в нашей системе сейчас гладко, но у меня все работает, в отличие от нашего главного...
+    Даже скучно. 
+    Кстати о скуке. Помнится, в 1972 мы с разработчиками в Atari играли в чудесную игру Pong...
+    Но на наших репозиториях нигде не осталось ее копий.
+    Даже в старых архивах на магнитных лентах.
+    Предлагаю пари — разработайте простейшую игру Pong для терминала IBM-совместимого PC.
+    Разместите ее в файле src/pong.c. 
+    Обыграете меня — пропущу дальше. 
+    Графика может быть любой, хоть символьной. Главное выведите счет на экран. 
+    Для соревновательности.
+    Ну и код должен красивым, конечно. Структурное программирование, вот это все.
+    Управление ракетками предлагаю осуществлять через клавиши a-z и k-m. 
+    Играем, естественно, до 21. 
+    Ах да, если задача покажется вам непосильной...
+    Можно реализовать и пошаговый режим. Это лучше чем ничего.
+    Пропуск действия тогда можно организовать с помощью пробела.
+    Приступайте к разработке. 
+    Все что у меня осталось по этой игре отправил на принтер.
 
-The next moment, the sound of a printer came from the corner, although it seemed 
-like it wasn't there before.
+И действительно, сразу в углу зажужжал принтер, которого раньше как будто не было.
 
-***== Quest received. Develop an src/pong.c program for a two-player game, 
-similar to Pong. To display the graphics, only use ASCII characters (with output 
-to the terminal). You need to implement the step-by-step 
-version using only the material of the course studied 
-so far and the standard library.***
+***== Получен Quest. Разработать программу src/pong.c, представляющую из себя игру для двух 
+игроков, схожую с игрой "Pong". Для отображения графики использовать только символьную (ASCII) 
+графику (с выводом в терминал). Вам необходимо реализовать пошаговый вариант исключительно в рамках уже изученного материала и стандартной библиотеки.*** 
 
-* ***Keys***:
+* ***Управление:***
+  
+***A/Z и K/M для перемещения ракеток.***
 
-***A/Z and K/M - to move the rackets;***
+***Space Bar для пропуска действия на очередном шаге игры в пошаговом режиме.***
 
-***Space Bar - to skip an action at a certain step of the game in step-by-step mode.***
+* ***Графика***
 
-* ***Graphics***
+***Поле — прямоугольник 80 на 25 символов.***
 
-***The field is a 80 x 25-symbol rectangle.*** 
+***Размер ракетки — 3 символа.***
 
-***Racket size is 3 symbols;*** 
-
-***Ball size is 1 symbol.***
+***размер мяча — 1 символ.***
 
 * ***UI/UX***
 
-***When one of the players scores 21 points, congratulations to the winner are displayed on the screen and the game ends.==***
+***После достижения одним из игроков счета в 21 очко, игра выводит поздравление победителя и завершается.==*** 
 
-## Bonus Part:
-***== Quest received. You need to implement interactive version of the PONG (real-time game mode). Additional 
-libraries can be used to simplify the processing of the players' actions and displaying symbolic graphics..==***
+## Бонусная часть
 
-## Important notes:
+***== Получен Quest. Необходимо реализовать в игре Pong интерактивный режим (режим игры в реальном времени), используя дополнительные библиотеки для упрощения обработки действий игроков и отображения символьной графики. ==*** 
 
-* The game must be written in C, have a structured style, and run from the terminal; 
+## Важные замечания
+
+* Игра должна быть разработана на языке Си, в структурном стиле и работать из терминала;
   
-* Your source code will be tested by the static analyzer `cppcheck`, as well as the style linter `cpplint`. 
-  
-* Instructions on how to run these tests on your computer are in the `materials` folder. 
-  
-* We also recommend taking a look at the `code-samples` folder.
+* Ваш исходный код будет тестироваться статическим анализатором ```cppcheck```, а также стилевым линтером 
+```cpplint```.
 
-* It is forbidden to use dynamic memory
+* Инструкция о том, как запустить эти тесты у себя на компьютере, лежит в папке `materials`.
 
-> When developing the game, follow 
-the principles of structured programming of E. Dijkstra.
+* Также советуем заглянуть в папку `code-samples`.
+
+* Запрещено использовать динамическую память
+
+> При разработке игры в полной мере руководствоваться принципами структурного программирования Э. Дейкстры. 
 
 ***LOADING...***
+
 
 # Chapter II
 
@@ -109,7 +108,6 @@ the principles of structured programming of E. Dijkstra.
 >
 >In 1974 the makers of the Magnavox Odyssey sued Atari for stealing the concept for Pong. Magnavox won the lawsuit in 1977, upholding the company’s patent, but by then Atari had already licensed the patent for $700,000.
 >
-![pong](misc/eng/images/pong.png)
+![pong](misc/rus/images/pong.png)
 
 ***LOADING...***
-
